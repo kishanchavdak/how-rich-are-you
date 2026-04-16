@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How Rich Are You?</title>
+</head>
+
+<body style="text-align:center;font-family:Arial">
+
+<h1>How Rich Are You Compared to the World?</h1>
+
+<input id="income" placeholder="Enter monthly income">
+
+<button onclick="check()">Check</button>
+
+<h2 id="result"></h2>
+
+<script>
+
+function check(){
+
+let income=document.getElementById("income").value;
+
+let percent=Math.min(100,Math.floor(income/50));
+
+document.getElementById("result").innerHTML=
+"You are richer than "+percent+"% of people in the world";
+
+}
+
+</script>
+
+</body>
+</html>
